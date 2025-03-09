@@ -1,2 +1,2 @@
 # PRO-VPT
-Iterative Prompt Relocation for Distribution-Adaptive Visual Prompt Tuning
+Code for paper: **Iterative Prompt Relocation for Distribution-Adaptive Visual Prompt Tuning**.
