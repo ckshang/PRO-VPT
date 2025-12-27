@@ -1,2 +1,2 @@
 # PRO-VPT
-Code for paper: **Iterative Prompt Relocation for Distribution-Adaptive Visual Prompt Tuning**.
+Code for ICCV 2025 paper: **PRO-VPT: Distribution-Adaptive Visual Prompt Tuning via Prompt Relocation**.
