@@ -8,6 +8,30 @@
 
 </div>
 
+## Open Questions
+
+## Key Configs
+- 🔥PRO-VPT related:
+  - MODEL.PROMPT.ADAPTIVE: adaptive or fixed prompt distribution
+  - MODEL.PROMPT.PPO: PPO (for RL) or TS (for MAB)
+  - MODEL.PROMPT.NUM_TOKENS: prompt length
+- Fine-tuning method specification:
+  - MODEL.TRANSFER_TYPE
+- Vision backbones:
+  - DATA.FEATURE: specify which backbone to use
+  - MODEL.TYPE: the general backbone type, e.g., "vit" or "swin"
+  - MODEL.MODEL_ROOT: folder with pre-trained model checkpoints
+- Optimization related: 
+  - SOLVER.BASE_LR: lr = base_lr * bs / 256
+  - SOLVER.WEIGHT_DECAY
+  - DATA.BATCH_SIZE
+- Datasets related:
+  - DATA.NAME
+  - DATA.DATAPATH: where you put the datasets
+  - DATA.NUMBER_CLASSES
+- Others:
+  - OUTPUT_DIR: output dir of the final model and logs
+
 ## Datasets
 See Tables ii and iii in the Appendix for dataset details.
 - Visual Task Adaptation Benchmark (VTAB): The benchmark can be downloaded following the detailed instructions in [VPT](https://github.com/KMnP/vpt/blob/main/VTAB_SETUP.md).
