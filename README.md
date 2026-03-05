@@ -4,7 +4,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2503.13227-b31b1b.svg)](https://arxiv.org/abs/2503.06901)
 [![iccv](https://img.shields.io/badge/ICCV-HomePage-blue)](https://iccv.thecvf.com/virtual/2025/poster/567)
 
-![image](https://github.com/ckshang/PRO-VPT/blob/main/imgs/provpt_framework.png)
+<img src="https://github.com/ckshang/PRO-VPT/blob/main/imgs/provpt_framework.png" width="500">
 
 </div>
 
