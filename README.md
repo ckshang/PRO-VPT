@@ -8,7 +8,9 @@
 
 </div>
 
-## Open Questions
+## Abstract
+Visual prompt tuning (VPT), i.e., fine-tuning some lightweight prompt tokens, provides an efficient and effective approach for adapting pre-trained models to various downstream tasks. However, most prior art indiscriminately uses a fixed prompt distribution across different tasks, neglecting the importance of each block varying depending on the task. In this paper, we introduce adaptive distribution optimization (ADO) by tackling two key questions: (1) How to appropriately and formally define ADO, and (2) How to design an adaptive distribution strategy guided by this definition? Through empirical analysis, we first confirm that properly adjusting the distribution significantly improves VPT performance, and further uncover a key insight that a nested relationship exists between ADO and VPT. Based on these findings, we propose a new VPT framework, termed PRO-VPT (iterative Prompt RelOcation-based VPT), which adaptively adjusts the distribution built upon a nested optimization formulation. Specifically, we develop a prompt relocation strategy derived from this formulation, comprising two steps: pruning idle prompts from prompt-saturated blocks, followed by allocating these prompts to the most prompt-needed blocks. By iteratively performing prompt relocation and VPT, our proposal can adaptively learn the optimal prompt distribution in a nested optimization-based manner, thereby unlocking the full potential of VPT. Extensive experiments demonstrate that our proposal significantly outperforms advanced VPT methods, e.g., PRO-VPT surpasses VPT by 1.6 pp and 2.0 pp average accuracy, leading prompt-based methods to state-of-the-art performance on VTAB-1k and FGVC benchmarks.
+
 
 ## Datasets
 See Tables ii and iii in the Appendix for dataset details.
@@ -36,6 +38,12 @@ See Tables ii and iii in the Appendix for dataset details.
   - DATA.NUMBER_CLASSES
 - Others:
   - OUTPUT_DIR: output dir of the final model and logs
+
+## Open Questions
+During experiments, we noticed several phenomena related to prompt-based methods that were not discussed in the paper:
+- Prompt-based methods appear to be sensitive to the learning rate and weight decay, which often requires careful hyperparameter tuning for different datasets.
+- During training, prompt-based methods may occasionally exhibit sudden spikes in loss/accuracy, followed by rapid recovery. Although these fluctuations do not appear to affect the final performance, their underlying causes remain unclear.
+We hope these observations can inform future work and encourage more thorough investigation to gain a deeper understanding of visual prompts.
 
 ## Citation
 If you find our work helpful in your research, please cite it as:
