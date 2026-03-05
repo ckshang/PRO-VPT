@@ -10,6 +10,11 @@
 
 ## Open Questions
 
+## Datasets
+See Tables ii and iii in the Appendix for dataset details.
+- Visual Task Adaptation Benchmark (VTAB): The benchmark can be downloaded following the detailed instructions in [VPT](https://github.com/KMnP/vpt/blob/main/VTAB_SETUP.md).
+- Fine-Grained Visual Classification tasks (FGVC): The datasets can be directly downloaded from [GPS](https://github.com/FightingFighting/GPS).
+
 ## Key Configs
 - 🔥PRO-VPT related:
   - MODEL.PROMPT.ADAPTIVE: adaptive or fixed prompt distribution
@@ -31,11 +36,6 @@
   - DATA.NUMBER_CLASSES
 - Others:
   - OUTPUT_DIR: output dir of the final model and logs
-
-## Datasets
-See Tables ii and iii in the Appendix for dataset details.
-- Visual Task Adaptation Benchmark (VTAB): The benchmark can be downloaded following the detailed instructions in [VPT](https://github.com/KMnP/vpt/blob/main/VTAB_SETUP.md).
-- Fine-Grained Visual Classification tasks (FGVC): The datasets can be directly downloaded from [GPS](https://github.com/FightingFighting/GPS).
 
 ## Citation
 If you find our work helpful in your research, please cite it as:
