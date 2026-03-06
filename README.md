@@ -41,8 +41,10 @@ See Tables ii and iii in the Appendix for dataset details.
 
 ## Open Questions
 During experiments, we noticed several phenomena related to prompt-based methods that were not discussed in the paper:
+
 - Prompt-based methods appear to be sensitive to the learning rate and weight decay, which often requires careful hyperparameter tuning for different datasets.
 - During training, prompt-based methods may occasionally exhibit sudden spikes in loss/accuracy, followed by rapid recovery. Although these fluctuations do not appear to affect the final performance, their underlying causes remain unclear.
+
 We hope these observations can inform future work and encourage more thorough investigation to gain a deeper understanding of visual prompts.
 
 ## Citation
